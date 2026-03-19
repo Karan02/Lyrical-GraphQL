@@ -6,7 +6,7 @@ class LyricList extends Component {
   onLike(id, likes) {
     this.props.mutate({
       variables: { id },
-      optimisticResponse: { // showing guessed response until response
+      optimisticResponse: { // showing guessed response until response, check graphql response, and paste below 'likeLyric'
         __typename: 'Mutation',
         likeLyric: {
           id,
